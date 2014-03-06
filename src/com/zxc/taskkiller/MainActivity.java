@@ -49,6 +49,8 @@ public class MainActivity extends Activity {
 	}
 	
 	public void button_onClick(View v) {
+		// Disable the button
+		v.setEnabled(false);
 		// Get running tasks
 		List<RunningTaskInfo> tasks = manager.getRunningTasks(maxNum);
 		// Get running services
@@ -59,6 +61,8 @@ public class MainActivity extends Activity {
 		// Iterate services
 		for (RunningServiceInfo service : services)
 			manager.killBackgroundProcesses(service.service.getPackageName());
+		// Enable the button
+		v.setEnabled(true);
 	}
 	
 	private class Task extends TimerTask {

@@ -5,6 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="avai_mem">Available Memory</string>
-    <string name="action_clean">CLEAN</string>
+    <string name="action_clean">Touch to Clean</string>
 
 </resources>
